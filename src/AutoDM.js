@@ -174,6 +174,53 @@ const AutoDM = () => {
               });
     }
    
+   
+   if (tweet.user.screen_name == 'TwitchTVOnline')
+    {
+              T.post('favorites/create', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from HomeTimeline tweet liked!`);
+              });
+     
+               T.post('statuses/retweet/:id', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from Home Timeline tweet RT!`);
+              });
+    }
+   
+   
+    if (tweet.user.screen_name == 'F_for_FeLoN')
+    {
+              T.post('favorites/create', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from HomeTimeline tweet liked!`);
+              });
+     
+               T.post('statuses/retweet/:id', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from Home Timeline tweet RT!`);
+              });
+    }
+   
+   
+    if (tweet.user.screen_name == 'ShoutGamers')
+    {
+              T.post('favorites/create', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from HomeTimeline tweet liked!`);
+              });
+     
+               T.post('statuses/retweet/:id', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from Home Timeline tweet RT!`);
+              });
+    }
     
     
   });
