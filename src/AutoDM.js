@@ -127,7 +127,7 @@ const AutoDM = () => {
     }
    
    
-      if (tweet.user.screen_name == 'superchloeone')
+      if (tweet.user.screen_name == 'NewbStreamTeam')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -191,7 +191,7 @@ const AutoDM = () => {
     }
    
    
-    if (tweet.user.screen_name == 'F_for_FeLoN')
+    if (tweet.user.screen_name == 'Retweet_Twitch')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
