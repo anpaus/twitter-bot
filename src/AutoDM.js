@@ -18,7 +18,7 @@ const AutoDM = () => {
  
   
   stream.on('tweet', function (tweet) {
-    if (tweet.user.screen_name == 'JustDannYT')
+    /*if (tweet.user.screen_name == 'JustDannYT')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -31,7 +31,7 @@ const AutoDM = () => {
               }, (err, data, response) => {
                   console.log(`${data.text} from Home Timeline tweet RT!`);
               });
-    }
+    }*/
     
     if (tweet.user.screen_name == 'DrLupoOnTwitch')
     {
