@@ -19,22 +19,9 @@ const AutoDM = () => {
  
   
   stream.on('tweet', function (tweet) {
-    /*if (tweet.user.screen_name == 'JustDannYT')
-    {
-             T.post('favorites/create', {
-                id: tweet.id_str
-              }, (err, data, response) => {
-                  console.log(`${data.text} from HomeTimeline tweet liked!`);
-              });
-     
-               T.post('statuses/retweet/:id', {
-                id: tweet.id_str
-              }, (err, data, response) => {
-                  console.log(`${data.text} from Home Timeline tweet RT!`);
-              });
-    }*/
-    
-    if (tweet.user.screen_name == 'DrLupoOnTwitch')
+    console.log(tweet);
+   
+   if (tweet.user.screen_name == 'DrLupoOnTwitch')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -211,7 +198,7 @@ const AutoDM = () => {
     if (tweet.user.screen_name == 'ShoutGamers')
     {
      
-     console.log(tweet);
+     
               /*T.post('favorites/create', {
                 id: tweet.id_str
               }, (err, data, response) => {
