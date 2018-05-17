@@ -210,6 +210,8 @@ const AutoDM = () => {
    
     if (tweet.user.screen_name == 'ShoutGamers')
     {
+     
+     console.log(tweet);
               /*T.post('favorites/create', {
                 id: tweet.id_str
               }, (err, data, response) => {
