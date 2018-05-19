@@ -20,7 +20,7 @@ const AutoDM = () => {
   
   stream.on('tweet', function (tweet) {
    
-   if (tweet.user.screen_name == 'DrLupoOnTwitch')
+   if (tweet.user.screen_name == 'konvikttv')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
