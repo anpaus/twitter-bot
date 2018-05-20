@@ -22,11 +22,11 @@ const AutoDM = () => {
    
    if (tweet.user.screen_name == 'konvikttv')
     {
-              T.post('favorites/create', {
+              /*T.post('favorites/create', {
                 id: tweet.id_str
               }, (err, data, response) => {
                   console.log(`${data.text} from HomeTimeline tweet liked!`);
-              });
+              });*/
      
                T.post('statuses/retweet/:id', {
                 id: tweet.id_str
@@ -36,13 +36,14 @@ const AutoDM = () => {
       
     }
 
-    if (tweet.user.screen_name == 'ninja')
+    if (tweet.user.screen_name == 'kR00kEdTV')
     {
-             T.post('favorites/create', {
+             /*T.post('favorites/create', {
                 id: tweet.id_str
               }, (err, data, response) => {
                   console.log(`${data.text} from HomeTimeline tweet liked!`);
-              });
+              });*/
+     
                T.post('statuses/retweet/:id', {
                 id: tweet.id_str
               }, (err, data, response) => {
