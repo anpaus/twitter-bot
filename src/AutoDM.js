@@ -221,12 +221,12 @@ const AutoDM = () => {
 const SendMessage = user => {
   const { screen_name, name } = user.source;
   
-  /*const obj = {
+  const obj = {
     screen_name,
     text: GenerateMessage(name)
-  };*/
+  };
 
- const obj = 
+ /*const obj = 
  {
   'event': 
   {
@@ -236,7 +236,7 @@ const SendMessage = user => {
     'message_data': {'text': GenerateMessage(name)}
    }
   }
- };
+ };*/
  
  
   // the follow stream track if I follow author person too.
@@ -290,7 +290,7 @@ const SendMessage = user => {
     
     
     setTimeout(() => {
-      T.post("direct_messages/events/new", obj)
+      T.post("direct_messages/new", obj)
         .catch(err => {
           console.error("error", err.stack);
         })
