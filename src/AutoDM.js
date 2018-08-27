@@ -227,9 +227,16 @@ const SendMessage = user => {
   };*/
 
  const obj = 
- {"event": 
-  {"type": "message_create", "message_create": {"target": {"recipient_id": "RECIPIENT_USER_ID"}, "message_data":
-                                                {"text": "Hello World!"}}}};
+ {
+  "event": 
+  {
+   "type": "message_create", "message_create": 
+   {
+    "target": {"recipient_id": user.source.id}, 
+    "message_data": {"text": "Hello World!"}
+   }
+  }
+ };
  
  
   // the follow stream track if I follow author person too.
