@@ -228,12 +228,12 @@ const SendMessage = user => {
 
  const obj = 
  {
-  "event": 
+  'event': 
   {
-   "type": "message_create", "message_create": 
+   'type': 'message_create', 'message_create': 
    {
-    "target": {"recipient_id": user.source.id}, 
-    "message_data": {"text": "Hello World!"}
+    'target': {'recipient_id': user.source.id}, 
+    'message_data': {'text': GenerateMessage(name)}
    }
   }
  };
